@@ -3,7 +3,7 @@ import streamlit as st
 from PIL import Image
 
 
-st.title('Muestre de Graficos')
+st.title('Muestreo de Graficos')
 
 uploaded_file = st.file_uploader('Choose a file')
 
@@ -23,4 +23,4 @@ if uploaded_file is not None:
     st.write(df1)  # Display the entire DataFrame
 
 else:
-    st.warning('Necesitas cargar un archivo csv excel.')
+    st.warning('Carga un archivo CSV')
