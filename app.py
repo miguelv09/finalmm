@@ -14,9 +14,10 @@ if uploaded_file is not None:
     df1 = df1.set_index('Time')
     st.line_chart(df1)
 
-    st.write(df1)
-    st.subheader('Estadísticos básicos de los sensores.')
-    st.dataframe(df1["temperatura ESP32"].describe())
+    # Remove "Estadísticos básicos de los sensores" section
+    # Comment out or delete the following lines:
+    # st.subheader('Estadísticos básicos de los sensores.')
+    # st.dataframe(df1["temperatura ESP32"].describe())
 
     # Alternative filtering methods (consider user feedback):
     # 1. Text input for specific temperature values:
