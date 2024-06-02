@@ -13,14 +13,5 @@ if uploaded_file is not None:
     st.subheader('Perfil gráfico de la variable medida.')
     df1 = df1.set_index('Time')
     st.line_chart(df1)
-
-    # Remove text input sections for temperature filtering
-    # Delete the following lines:
-    # min_temp_str = st.text_input('Enter minimum temperature filter (optional):', key='min_temp')
-    # max_temp_str = st.text_input('Enter maximum temperature filter (optional):', key='max_temp')
-
-    # Show the DataFrame (optional)
-    # st.write(df1)  # Uncomment if you want to display the entire DataFrame
-
 else:
     st.warning('Necesitas cargar un archivo csv excel.')
